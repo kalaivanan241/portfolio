@@ -1,0 +1,16 @@
+@import "./../../styles/variable";
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: $spacing * 3;
+
+  a {
+    display: block;
+    margin: 0 $spacing * 2;
+    img {
+      background: $liner-color;
+      border-radius: 5px;
+    }
+  }
+}

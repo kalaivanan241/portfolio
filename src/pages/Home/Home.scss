@@ -1,0 +1,24 @@
+@import "./../styles/variable";
+.home {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: 100%;
+
+    h1 {
+      font-size: 4vw;
+      .home__name {
+        display: block;
+        font-size: 9vw;
+        margin-bottom: 7rem;
+      }
+      @media screen and (max-width: $medium) {
+        font-size: 6vw;
+      }
+    }
+  }
+}

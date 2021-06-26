@@ -1,0 +1,15 @@
+@import "./../../styles/variable";
+
+.form-field {
+  width: 100%;
+  margin-bottom: $spacing;
+  label {
+    display: block;
+  }
+  &__input {
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: $grey-drak;
+    width: 100%;
+  }
+}

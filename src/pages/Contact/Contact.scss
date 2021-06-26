@@ -1,0 +1,52 @@
+@import "./../../styles/variable";
+
+.contact {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 83px;
+  padding-bottom: 20vh;
+  margin: 0;
+  position: relative;
+
+  &__alert {
+    position: fixed;
+    padding: 0.5rem 1rem;
+    background: #fca311;
+    font-size: 12px;
+    font-weight: bold;
+    bottom: 20px;
+    border-radius: 5px;
+    max-width: 100vw;
+    left: 0;
+    right: 10px;
+  }
+
+  &__title {
+    margin: 2 * $spacing 0;
+    text-align: center;
+  }
+
+  &__form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    @media screen and (max-width: $small) {
+      display: block;
+    }
+  }
+
+  &__btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: $spacing * 2;
+
+    a {
+      display: block;
+      color: $secondary-color;
+      font-weight: 600;
+    }
+  }
+}
