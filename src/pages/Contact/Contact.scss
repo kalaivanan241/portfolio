@@ -43,6 +43,12 @@
     align-items: center;
     margin-top: $spacing * 2;
 
+    button {
+      @media screen and (max-width: $small) {
+        width: 100%;
+      }
+    }
+
     a {
       display: block;
       color: $secondary-color;

@@ -52,8 +52,11 @@
       color: $grey-drak;
       flex: 1;
       display: flex;
+      justify-content: flex-end;
       button {
-        flex: 1;
+        @media screen and (max-width: $small) {
+          flex: 1;
+        }
       }
     }
   }
