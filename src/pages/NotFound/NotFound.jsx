@@ -5,7 +5,7 @@ import "./NotFound.scss";
 const NotFound = () => {
   return (
     <div className="not-found">
-      <img src={Image} />
+      <img src={Image} alt="not-found" />
     </div>
   );
 };
