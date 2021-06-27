@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Button from "./../../components/Button/Button";
@@ -74,8 +74,6 @@ const skillListData = [
   },
 ];
 
-const skillList = [];
-
 const PercentMap = ({ percent }) => {
   return (
     <div className="percent-group">
@@ -91,17 +89,6 @@ const PercentMap = ({ percent }) => {
 };
 
 const Skills = () => {
-  const [skills, setSkills] = useState(
-    skillList.map((skill) => {
-      return { ...skill, percent: 0 };
-    })
-  );
-
-  useEffect(() => {
-    setTimeout(() => {
-      setSkills(skillList);
-    }, 300);
-  }, []);
   return (
     <div className="skills">
       <h1>My Skills</h1>
