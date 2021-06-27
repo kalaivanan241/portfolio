@@ -96,9 +96,7 @@ const Contact = () => {
             />
           </div>
           <div className="contact__btn-container">
-            <a href="https://drive.google.com/uc?export=download&id=1zkDWgZnHeSdOXy8vZ2sWpXiaRwaWOSF6">
-              Download CV
-            </a>
+            <div></div>
             <Button>Submit</Button>
           </div>
           <SocialMediaIcons />

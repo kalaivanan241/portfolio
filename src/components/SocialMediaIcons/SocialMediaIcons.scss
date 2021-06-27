@@ -14,3 +14,27 @@
     }
   }
 }
+
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cv-link {
+  margin-top: $spacing * 2;
+  a {
+    display: block;
+    color: #fca311;
+    font-weight: 600;
+  }
+}

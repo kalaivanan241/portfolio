@@ -32,13 +32,13 @@ const Home = () => {
 
   return (
     <div className="home">
+      <h1 className="home__name">KALAIVANAN</h1>
       <div className="home__container">
         <motion.h1
           initial={{ x: -100 }}
           animate={{ x: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <span className="home__name">KALAIVANAN</span>
           I'm a :{" "}
         </motion.h1>
         <motion.h1 transition={{ delay: 2 }}>
@@ -49,6 +49,11 @@ const Home = () => {
           ))}
         </motion.h1>
       </div>
+      <p className="home__desc">
+        <span>Full stack Web developer</span> with 6 years of core experience
+        and also Implemented 5 RPA projects using UIPATH, I’m very passionate to
+        learn new technology and challenge me to work efficiently.
+      </p>
     </div>
   );
 };
