@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import Button from "../../components/Button/Button";
 import "./Experience.scss";
 
 const experiences = [
@@ -82,13 +84,8 @@ const experiences = [
 ];
 
 const Experience = () => {
-  const [experienceList, setExperienceList] = React.useState([]);
+  const [experienceList] = React.useState(experiences);
 
-  React.useEffect(() => {
-    setTimeout(() => {
-      setExperienceList(experiences);
-    }, 200);
-  }, []);
   return (
     <div className="experience">
       <h1 className="experience__title">Experience</h1>
@@ -133,6 +130,11 @@ const Experience = () => {
             </div>
           </motion.div>
         ))}
+      </div>
+      <div className="experience__button-container">
+        <Link to="/contact-me">
+          <Button>Contact Me</Button>
+        </Link>
       </div>
     </div>
   );

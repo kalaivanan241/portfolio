@@ -1,14 +1,15 @@
 @import "./../../styles/variable";
 
 .btn {
-  padding: $spacing;
+  padding: $spacing $spacing * 2;
   border: none;
   border-radius: 7rem;
   color: $grey-drak;
   transition: 1s;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.63);
+  text-transform: uppercase;
 }
 
 .btn-primary {

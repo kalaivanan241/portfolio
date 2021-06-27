@@ -59,4 +59,19 @@
       padding-left: $spacing;
     }
   }
+
+  &__button-container {
+    margin-top: $spacing * 2;
+    width: 100%;
+    a {
+      display: block;
+      width: 100%;
+
+      button {
+        @media screen and (max-width: $medium) {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

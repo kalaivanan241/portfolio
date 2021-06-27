@@ -18,7 +18,7 @@ const Button = ({
       }
       onClick={onClick}
       initial={{
-        scale: 1.2,
+        scale: 1.1,
       }}
       animate={{
         scale: 1,

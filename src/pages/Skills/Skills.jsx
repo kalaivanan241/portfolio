@@ -121,7 +121,7 @@ const Skills = () => {
       </div>
       <div className="skills__button">
         <Link to="/experience">
-          <Button variant="secondary">My Work</Button>
+          <Button>My Work</Button>
         </Link>
       </div>
     </div>
