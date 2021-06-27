@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import Button from "./../../components/Button/Button";
 import "./Home.scss";
 
 const wordingList = ["Fullstack Web Developer", "Part time Trader"];
@@ -54,6 +56,11 @@ const Home = () => {
         and also Implemented 5 RPA projects using UIPATH, I’m very passionate to
         learn new technology and challenge me to work efficiently.
       </p>
+      <div className="home__button-container">
+        <Link to="/skills">
+          <Button>My Skills</Button>
+        </Link>
+      </div>
     </div>
   );
 };

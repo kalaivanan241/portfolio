@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
+  padding-top: $spacing * 3;
 
   &__container {
     width: 100%;
@@ -30,6 +31,22 @@
     span {
       color: $secondary-color;
       font-weight: bold;
+    }
+  }
+
+  &__button-container {
+    display: flex;
+    width: 100%;
+
+    a {
+      display: block;
+      width: 100%;
+
+      button {
+        @media screen and (max-width: $medium) {
+          width: 100%;
+        }
+      }
     }
   }
 }

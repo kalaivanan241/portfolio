@@ -2,7 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./Button.scss";
 
-const Button = ({ children, onClick, variant = "primary", className = "" }) => {
+const Button = ({
+  children,
+  onClick,
+  variant = "primary",
+  className = "",
+  ...props
+}) => {
   return (
     <motion.button
       className={
@@ -20,6 +26,7 @@ const Button = ({ children, onClick, variant = "primary", className = "" }) => {
       transition={{
         duration: 0.5,
       }}
+      {...props}
     >
       {children}
     </motion.button>

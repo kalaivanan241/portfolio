@@ -87,7 +87,7 @@
 
   &__mobile-icon {
     width: 30px;
-    height: 2px;
+    height: 4px;
     background-color: $secondary-color;
     top: 12px;
     transition: 1s;
@@ -98,7 +98,7 @@
       position: absolute;
       content: "";
       width: 30px;
-      height: 2px;
+      height: 4px;
       background-color: $white;
       transition: 1s;
     }
@@ -107,7 +107,7 @@
       position: absolute;
       content: "";
       width: 30px;
-      height: 2px;
+      height: 4px;
       background-color: $white;
       transition: 1s;
     }
@@ -119,21 +119,21 @@
     top: 12px;
 
     &::before {
-      top: 15px;
+      top: 13px;
       position: absolute;
       content: "";
       width: 30px;
-      height: 2px;
+      height: 4px;
       background-color: #ffffff;
       transform: rotate(45deg) translate(-1px, 0);
       transition: 1s;
     }
     &::after {
-      bottom: 14px;
+      bottom: 13px;
       position: absolute;
       content: "";
       width: 30px;
-      height: 2px;
+      height: 4px;
       background-color: #ffffff;
       transform: rotate(-45deg);
       transition: 1s;
