@@ -5,6 +5,7 @@ import Layout from "./components/Layout/Layout";
 import Experience from "./pages/Experience/Experience";
 import Skills from "./pages/Skills/Skills";
 import Contact from "./pages/Contact/Contact";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route component={Experience} path="/experience" />
           <Route component={Skills} path="/skills" />
           <Route component={Contact} path="/contact-me" />
+          <Route component={NotFound} />
         </Layout>
       </Switch>
     </Router>
