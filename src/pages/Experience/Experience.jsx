@@ -100,8 +100,10 @@ const Experience = () => {
               x: 0,
             }}
             transition={{
-              delay: 0.3 * index,
+              delay: 0.2 * index,
               duration: 0.5 * (index + 1),
+              type: "spring",
+              stiffness: 60,
             }}
           >
             <h2 className="experience__list__title">{ex.title}</h2>
